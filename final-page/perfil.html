@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HuertoHogar - Mi perfil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="login.html">Iniciar sesión</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+
+        <section id="perfil">
+            <h1>Mi perfil</h1>
+            <p>Actualiza tu información personal, dirección de entrega y número de contacto.</p>
+
+            <form id="formulario-perfil">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="56912345678">
+                </div>
+                <div class="campo">
+                    <label for="direccion">Dirección de entrega</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, número, comuna">
+                </div>
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
+
+        <section id="historial">
+            <h2>Historial de compras</h2>
+            <p>Tus compras anteriores aparecerán aquí para que puedas repetirlas fácilmente.</p>
+            <table id="tabla-historial">
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Fecha</th>
+                        <th>Producto</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5">Aún no hay compras registradas.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer id="piedepagina">
+            <ul>
+                <li>HuertoHogar &copy; 2026</li>
+                <li>Contacto: contacto@huertohogar.cl</li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
