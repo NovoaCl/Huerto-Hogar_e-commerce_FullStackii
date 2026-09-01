@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>HuertoHogar - Registro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+   
+
+    <body>
+
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Registro</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+
+        <section id="registro">
+            <h1>Crear cuenta</h1>
+            <p>Regístrate para realizar pedidos, guardar tus direcciones y seguir tus envíos.</p>
+
+            <form id="formulario-registro">
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Crea una contraseña segura">
+                </div>
+                <div class="campo">
+                    <label for="password2">Confirmar contraseña</label>
+                    <input type="password" id="password2" name="password2" placeholder="Repite tu contraseña">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="56912345678">
+                </div>
+                <div class="campo">
+                    <label for="direccion">Dirección de entrega</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, número, comuna">
+                </div>
+                <button type="submit">Registrarme</button>
+            </form>
+
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+        </section>
+
+        <footer id="piedepagina">
+            <ul>
+                <li>HuertoHogar &copy; 2026</li>
+                <li>Contacto: contacto@huertohogar.cl</li>
+            </ul>
+        </footer>
+
+         <script src="registro.js"></script>
+         <script src="menu.js"></script>
+
+    </body>
+</html>

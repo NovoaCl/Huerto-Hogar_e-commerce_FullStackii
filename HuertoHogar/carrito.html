@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>HuertoHogar - Carrito</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="registro.html" id="btnRegistro">Registro</a>
+    <a href="login.html" id="btnLogin">Iniciar sesión</a>
+    <a href="perfil.html" id="btnPerfil">Perfil</a>
+    <a href="#" id="btnCerrarSesion">Cerrar sesión</a>
+</nav>
+
+
+        <section id="carrito">
+            <h1>Tu carrito de compras</h1>
+            <p>Revisa los productos que has agregado antes de confirmar tu pedido.</p>
+
+            <div id="carrito-contenido">
+                <p>Tu carrito está vacío.</p>
+            </div>
+
+            <div id="resumen-carrito">
+                <h2>Resumen</h2>
+                <ul>
+                    <li>Subtotal: <span id="subtotal">$0 CLP</span></li>
+                    <li>Envío: <span id="envio">$0 CLP</span></li>
+                    <li>Total: <span id="total">$0 CLP</span></li>
+                </ul>
+                <button type="button">Confirmar pedido</button>
+            </div>
+        </section>
+
+        <footer id="piedepagina">
+            <ul>
+                <li>HuertoHogar &copy; 2026</li>
+                <li>Contacto: contacto@huertohogar.cl</li>
+            </ul>
+        </footer>
+
+        <script src="carrito.js"></script>
+        <script src="menu.js"></script>
+
+    </body>
+</html>

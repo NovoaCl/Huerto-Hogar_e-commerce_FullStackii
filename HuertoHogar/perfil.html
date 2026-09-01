@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HuertoHogar - Mi perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="registro.html" id="btnRegistro">Registro</a>
+        <a href="login.html" id="btnLogin">Iniciar sesión</a>
+        <a href="perfil.html" id="btnPerfil">Perfil</a>
+        <a href="#" id="btnCerrarSesion">Cerrar sesión</a>
+    </nav>
+
+    <section id="perfil" class="seccion">
+        <h1>Mi perfil</h1>
+        <div class="contenedor">
+            
+            <form id="formulario-perfil">
+                <label>Nombre completo:</label>
+                <input type="text" id="nombre" value="Alvaro Moran Lopez">
+
+                <label>Correo electrónico:</label>
+                <input type="email" id="email" value="atr.moran1991@gmail.com">
+
+                <label>Teléfono:</label>
+                <input type="text" id="telefono" value="92004920">
+
+                <label>Dirección de entrega:</label>
+                <input type="text" id="direccion" value="gabriela mistral 3105">
+
+                <button type="submit" class="btn-verde">Guardar cambios</button>
+            </form>
+        </div>
+
+        <div class="contenedor">
+            <h2>Historial de compras</h2>
+            <table id="tabla-historial">
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Fecha</th>
+                        <th>Productos</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer id="piedepagina">
+        <ul>
+            <li>HuertoHogar &copy; 2026</li>
+            <li>Contacto: contacto@huertohogar.cl</li>
+        </ul>
+    </footer>
+
+    
+    <script src="menu.js"></script>
+    
+    <script src="perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>HuertoHogar - Contacto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="registro.html" id="btnRegistro">Registro</a>
+    <a href="login.html" id="btnLogin">Iniciar sesión</a>
+    <a href="perfil.html" id="btnPerfil">Perfil</a>
+    <a href="#" id="btnCerrarSesion">Cerrar sesión</a>
+</nav>
+
+
+        <section id="contacto-info">
+            <h1>Contáctanos</h1>
+            <p>
+                ¿Tienes preguntas, sugerencias o quieres hacer un pedido especial? Completa el formulario
+                y nos pondremos en contacto contigo lo antes posible.
+            </p>
+        </section>
+
+        <section id="formulario">
+            <h2>Envíanos un mensaje</h2>
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="56912345678">
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">Selecciona un asunto</option>
+                        <option value="pedido">Consulta sobre pedido</option>
+                        <option value="producto">Consulta sobre producto</option>
+                        <option value="envio">Seguimiento de envío</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="contacto-datos">
+            <h2>Información de contacto</h2>
+            <ul>
+                <li><strong>Correo:</strong> contacto@huertohogar.cl</li>
+                <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
+                <li><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 - 18:00</li>
+                <li><strong>Redes sociales:</strong> Instagram, Facebook, Twitter</li>
+            </ul>
+        </section>
+
+        <footer id="piedepagina">
+            <ul>
+                <li>HuertoHogar &copy; 2026</li>
+                <li>Contacto: contacto@huertohogar.cl</li>
+            </ul>
+        </footer>
+
+        <script src="menu.js"></script>
+
+    </body>
+</html>
