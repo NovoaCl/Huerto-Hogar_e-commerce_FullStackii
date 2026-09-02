@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>HuertoHogar - Nosotros</title>
@@ -10,13 +10,17 @@
     <body>
 
         <nav id="menu">
-            <a href="index.html">Inicio</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="login.html">Iniciar sesión</a>
-            <a href="carrito.html">Carrito</a>
-        </nav>
+    <a href="index.html">Inicio</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="registro.html" id="btnRegistro">Registro</a>
+    <a href="login.html" id="btnLogin">Iniciar sesión</a>
+    <a href="perfil.html" id="btnPerfil">Perfil</a>
+    <a href="#" id="btnCerrarSesion">Cerrar sesión</a>
+</nav>
+
 
         <section id="historia">
             <h1>Nuestra Historia</h1>
@@ -60,26 +64,12 @@
             </ul>
         </section>
 
-        <section id="sucursales">
-            <h2>Nuestras Sucursales</h2>
-            <p>Contamos con puntos de operación en las principales ciudades de Chile:</p>
-            <ul>
-                <li>Santiago</li>
-                <li>Puerto Montt</li>
-                <li>Villarica</li>
-                <li>Nacimiento</li>
-                <li>Viña del Mar</li>
-                <li>Valparaíso</li>
-                <li>Concepción</li>
-            </ul>
+        
+        <section id="mapa">
+        <h2>Encuéntranos en el mapa</h2>
+        <div id="mapa-tiendas"></div>
         </section>
 
-        <section id="mapa">
-            <h2>Encuéntranos en el mapa</h2>
-            <div id="mapa-tiendas">
-                <span>Mapa de ubicaciones - Google Maps (por integrar)</span>
-            </div>
-        </section>
 
         <footer id="piedepagina">
             <ul>
@@ -87,6 +77,9 @@
                 <li>Contacto: contacto@huertohogar.cl</li>
             </ul>
         </footer>
+
+        <script src="../js/nosotros.js"></script>
+        <script src="../js/menu.js"></script>
 
     </body>
 </html>

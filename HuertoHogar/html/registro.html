@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
         <meta charset="utf-8">
-        <title>HuertoHogar - Mi perfil</title>
+        <title>HuertoHogar - Registro</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
+   
+
     <body>
 
         <nav id="menu">
@@ -14,15 +17,15 @@
             <a href="tienda.html">Tienda</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Registro</a>
             <a href="login.html">Iniciar sesión</a>
-            <a href="carrito.html">Carrito</a>
         </nav>
 
-        <section id="perfil">
-            <h1>Mi perfil</h1>
-            <p>Actualiza tu información personal, dirección de entrega y número de contacto.</p>
+        <section id="registro">
+            <h1>Crear cuenta</h1>
+            <p>Regístrate para realizar pedidos, guardar tus direcciones y seguir tus envíos.</p>
 
-            <form id="formulario-perfil">
+            <form id="formulario-registro">
                 <div class="campo">
                     <label for="nombre">Nombre completo</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
@@ -32,6 +35,14 @@
                     <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com">
                 </div>
                 <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Crea una contraseña segura">
+                </div>
+                <div class="campo">
+                    <label for="password2">Confirmar contraseña</label>
+                    <input type="password" id="password2" name="password2" placeholder="Repite tu contraseña">
+                </div>
+                <div class="campo">
                     <label for="telefono">Teléfono</label>
                     <input type="tel" id="telefono" name="telefono" placeholder="56912345678">
                 </div>
@@ -39,29 +50,10 @@
                     <label for="direccion">Dirección de entrega</label>
                     <input type="text" id="direccion" name="direccion" placeholder="Calle, número, comuna">
                 </div>
-                <button type="submit">Guardar cambios</button>
+                <button type="submit">Registrarme</button>
             </form>
-        </section>
 
-        <section id="historial">
-            <h2>Historial de compras</h2>
-            <p>Tus compras anteriores aparecerán aquí para que puedas repetirlas fácilmente.</p>
-            <table id="tabla-historial">
-                <thead>
-                    <tr>
-                        <th>Pedido</th>
-                        <th>Fecha</th>
-                        <th>Producto</th>
-                        <th>Total</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="5">Aún no hay compras registradas.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
         </section>
 
         <footer id="piedepagina">
@@ -70,6 +62,9 @@
                 <li>Contacto: contacto@huertohogar.cl</li>
             </ul>
         </footer>
+
+         <script src="../js/registro.js"></script>
+         <script src="../js/menu.js"></script>
 
     </body>
 </html>
