@@ -180,6 +180,90 @@ button {
 }
 
 
+#banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.producto img {
+    width: 60%;              
+    height: auto;           
+    border-radius: 8px;      
+    margin: 0.5rem auto;     
+    display: block;          
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease; 
+}
+
+.producto img:hover {
+    transform: scale(1.08); 
+}
+
+
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn-eliminar {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #c9302c;
+}
+
+
+.btn-confirmar {
+    background-color: #24b645;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-confirmar:hover {
+    background-color: #1e9e3b;
+}
+
+
+
+
+
+
+
+
 
 
 
