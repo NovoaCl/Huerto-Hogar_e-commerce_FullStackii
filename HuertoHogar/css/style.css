@@ -7,11 +7,27 @@
     --gris-medio: #666666;  /* texto secundario */
 }
 
+html {
+    background-color: var(--blanco); /*fondo blanco que cubre toda la pagina */
+}
+
 body {
-    margin: 0; /*margen blanco alrededor de toda la pagina  */
+    margin: 0; /* sin margen: el cuerpo ocupa todo el ancho de la pagina */
+    display: flex;
+    flex-direction: column; /* apila menu, contenido y pie de arriba a abajo */
+    min-height: 100vh; /* altura minima de la ventana para que el pie caiga al fondo */
     background-color: var(--blanco); /*fondo blanco  */
     color: var(--gris-oscuro); /*gris */
     font-family: 'Montserrat', sans-serif;
+}
+
+/* el contenido (secciones, divs, tablas y formularios) ocupa el 60% centrado;
+   el menu (nav), el banner (hero) y el pie (footer) quedan a ancho completo */
+body > :not(nav):not(#hero):not(footer):not(script) {
+    width: 60%;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2, h3 { /* agrupa los selectores que van a compartir las propiedades  */
@@ -19,9 +35,18 @@ h1, h2, h3 { /* agrupa los selectores que van a compartir las propiedades  */
     color: var(--marron);
 }
 
+/* el banner ocupa el ancho completo, pero su texto interno queda al 60% centrado */
+#hero h1,
+#hero p {
+    width: 60%;
+    max-width: 60%;
+    margin: 1rem auto;
+}
+
 #menu {
     background-color: var(--verde);
     display: flex; /* permite acomodar las vistas y que no se vea todo vertical  */
+    justify-content: flex-end; /* alinea los enlaces del menu hacia el lado derecho */
     gap: 1rem; /* separacion para que no se vea tan pegado todo  */
     padding: 1rem; /* separacion a toda la barra para que no quede el texto pegado al borde de la pantalla */
 }
@@ -73,6 +98,7 @@ button {
     background-color: var(--gris-oscuro);
     color: white;
     padding: 1rem; /* espacio alrededor del contenido del pie de pagina */
+    margin-top: auto; /* empuja el pie de pagina al fondo de la ventana en cada pestaña */
 }
 
 #piedepagina ul {
