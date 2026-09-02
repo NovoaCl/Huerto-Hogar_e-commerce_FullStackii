@@ -17,20 +17,22 @@ function mostrarCarrito() {
         return;
     }
 
-    let html = "<ul>";
+    let html = "";
     let subtotal = 0;
 
     carrito.forEach((producto, index) => {
         subtotal += producto.precio * producto.cantidad;
         html += `
-            <li>
-                ${producto.nombre} - $${producto.precio} CLP x ${producto.cantidad}
-                <button onclick="eliminarProducto(${index})">Eliminar</button>
-            </li>
+            <div class="item-carrito">
+                <div class="info-producto">
+                    <span class="nombre-producto">${producto.nombre}</span>
+                    <span class="precio-producto">$${producto.precio} CLP × ${producto.cantidad}</span>
+                </div>
+                <button class="btn-eliminar" data-index="${index}">Eliminar</button>
+            </div>
         `;
     });
 
-    html += "</ul>";
     carritoContenido.innerHTML = html;
 
     // Calcular totales
@@ -40,6 +42,15 @@ function mostrarCarrito() {
     subtotalSpan.textContent = "$" + subtotal + " CLP";
     envioSpan.textContent = "$" + envio + " CLP";
     totalSpan.textContent = "$" + total + " CLP";
+
+    // Conectar botones eliminar
+    const botonesEliminar = document.querySelectorAll(".btn-eliminar");
+    botonesEliminar.forEach(boton => {
+        boton.addEventListener("click", () => {
+            const indice = boton.getAttribute("data-index");
+            eliminarProducto(indice);
+        });
+    });
 }
 
 // Función para eliminar producto
@@ -83,4 +94,3 @@ if (btnConfirmar) {
 
 // Mostrar carrito al cargar la página
 mostrarCarrito();
-
